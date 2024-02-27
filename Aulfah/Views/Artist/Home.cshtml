@@ -1,0 +1,284 @@
+﻿@* @model Artist *@
+@* @{
+    var artistProduct = new SelectList(ViewBag.ArtistProduct, "ProductId", "ProductName");
+
+    var artistServices = new SelectList(ViewBag.ArtistServices, "ServiceID", "Description");
+
+    var saledProduct = ViewBag.SaledProduct;
+
+    var artistServicesObjectCoubt = ViewBag.ArtistServicesObjectCoubt;
+
+
+}
+ *@
+
+
+<div class="">
+    <!-- =============== Navigation ================ -->
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="#">
+
+                    <span class="icon" id="Artist-Pic">
+                       @* <img src="assets/img/customer01.jpg" alt="" /> *@
+                    </span>
+                    <span class="title">Artist Name <br><span class="artistEmail">Artist@gmai.com </span></span>
+
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"> <i class="fa-solid fa-table-columns"></i></span>
+                    <span class="title">Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"> <i class="fa-solid fa-user"></i> </span>
+                    <span class="title">Profile</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"> <i class="fa-solid fa-sort"></i> </span>
+                    <span class="title">Orders</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"> <i class="fa-solid fa-message"></i> </span>
+                    <span class="title">Messages</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"> <i class="fa-solid fa-sitemap"></i> </span>
+                    <span class="title">Product</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"> <i class="fa-solid fa-headset"></i> </span>
+                    <span class="title">Support</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"> <i class="fa-solid fa-arrow-right-from-bracket"></i> </span>
+                    <span class="title">Sign Out</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ========================= Main ==================== -->
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="search">
+                <label>
+                    <input type="text" placeholder="Search here">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+        </div>
+
+
+        <!-- ======================= Cards ================== -->
+        <div class="cardBox">
+            <div class="card">
+                <div class="cardComtainer">
+                    <div class="cardName">Earning</div>
+                    <div class="numbers">$7,842</div>
+                </div>
+
+                <div class="iconBx">
+                    <i class="fa-solid fa-money-check"></i>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardComtainer">
+                    <div class="cardName">Sales</div>
+                    <div class="numbers">80</div>
+                </div>
+
+                <div class="iconBx">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================ Services Details List ================= -->
+        <div class="details">
+            <div class="recentServices">
+                <div class="cardHeader">
+                    <h2>Recent Services</h2>
+                    <a href="#" class="btn">View All</a>
+                </div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Price</td>
+                            <td>Payment</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Star Refrigerator</td>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dell Laptop</td>
+                            <td>$110</td>
+                            <td>Due</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Apple Watch</td>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="status return">Return</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Addidas Shoes</td>
+                            <td>$620</td>
+                            <td>Due</td>
+                            <td><span class="status inProgress">In Progress</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Star Refrigerator</td>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="status delivered">Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Dell Laptop</td>
+                            <td>$110</td>
+                            <td>Due</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Apple Watch</td>
+                            <td>$1200</td>
+                            <td>Paid</td>
+                            <td><span class="status return">Return</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>Addidas Shoes</td>
+                            <td>$620</td>
+                            <td>Due</td>
+                            <td><span class="status inProgress">In Progress</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ================= My Product ================ -->
+            <div class="recentProduct">
+                <div class="cardHeader">
+                    <h2>Recent Product</h2>
+                </div>
+
+                <table>
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx"><img src="assets/img/customer02.jpg" alt=""></div>
+                        </td>
+                        <td>
+                            <h4>David  <span>Italy</span> $22</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx"><img src="assets/img/customer01.jpg" alt=""></div>
+                        </td>
+                        <td>
+                            <h4>Amit  <span>India</span> $22</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx"><img src="assets/img/customer02.jpg" alt=""></div>
+                        </td>
+                        <td>
+                            <h4>David <span>Italy</span> $22</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx"><img src="assets/img/customer01.jpg" alt=""></div>
+                        </td>
+                        <td>
+                            <h4>Amit  <span>India</span> $22</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx"><img src="assets/img/customer02.jpg" alt=""></div>
+                        </td>
+                        <td>
+                            <h4>David  <span>Italy</span> $22</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx"><img src="assets/img/customer01.jpg" alt=""></div>
+                        </td>
+                        <td>
+                            <h4>Amit <span>India</span> $22</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx"><img src="assets/img/customer01.jpg" alt=""></div>
+                        </td>
+                        <td>
+                            <h4>David <span>Italy</span> $22</h4>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td width="60px">
+                            <div class="imgBx"><img src="assets/img/customer02.jpg" alt=""></div>
+                        </td>
+                        <td>
+                            <h4>Amit  <span>India</span> $22</h4>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

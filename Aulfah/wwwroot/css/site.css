@@ -1,0 +1,72 @@
+
+html {
+  font-size: 14px;
+}
+.categoryImage {
+    width: 10vw;
+    height: 10vh;
+}
+
+.headnavbar {
+    display: flex;
+    background-color: #1C395E;
+    color: #A2D48D;
+    font-size: larger;
+    height: 10vh;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 2vw;
+    color: #A2D48D;
+    padding-left: 50%;
+}
+
+.iconNav {
+    color: #A2D48D;
+    font-size: 1.5vw;
+}
+
+.iconAccount {
+    color: #A2D48D;
+    font-size: 3vw;
+}
+
+.searchfrorm {
+    background-color: #A2D48D;
+    height: 5vh;
+}
+
+.form-inputs {
+    position: relative;
+    color: #A2D48D;
+    
+}
+
+    .form-inputs i {
+        color: #1C395E;
+        position: absolute;
+        font-size: 1.5vw;
+        right: 10px;
+        top: 5px;
+    }
+
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
